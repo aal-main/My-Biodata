@@ -140,6 +140,9 @@ Govt. Hazi Ibrahim Alamchan Model School & College, Bandar, Narayanganj and HSC 
         <footer>
             <p>If these words resonate with your heart and you, too, seek a peaceful, faith-centered companionship, I would be honoured to connect with you and your family. May Allah guide us all to what is pure, sincere, and destined for our good.</p>
             <p>Warm regards, Abdullah Al Main</p>
+            <p>Mobile & WhatsApp: 01517830517</p>
+            <p>Guardian (Father) Mobile & WhatsApp: 01739694602</p>
+            <p><a href="https://maps.app.goo.gl/Jjtv76hqVVLgcuzF7" target="_blank">View Our Present Address on Map</a></p>
             <p>"And among His signs is that He created for you spouses that you may find tranquility in them, and He placed between you affection and mercy."</p>
             <p class="quran-ref">(Quran 30:21)</p>
         </footer>
@@ -194,6 +197,9 @@ Govt. Hazi Ibrahim Alamchan Model School & College, Bandar, Narayanganj and HSC 
                 gallery: "Photo Gallery",
                 footer1: "If these words resonate with your heart and you, too, seek a peaceful, faith-centered companionship, I would be honoured to connect with you and your family. May Allah guide us all to what is pure, sincere, and destined for our good.",
                 footer2: "Warm regards, Abdullah Al Main",
+                footer3: "Mobile & WhatsApp: 01517830517",
+                footer4: "Guardian (Father) Mobile & WhatsApp: 01739694602",
+                footer5: "View Our Present Address on Map",
                 quran: "\"And among His signs is that He created for you spouses that you may find tranquility in them, and He placed between you affection and mercy.\"",
                 quranRef: "(Quran 30:21)"
             },
@@ -243,6 +249,9 @@ Govt. Hazi Ibrahim Alamchan Model School & College, Bandar, Narayanganj and HSC 
                 gallery: "ফটো গ্যালারি",
                 footer1: "যদি এই কথাগুলি আপনার হৃদয়ে প্রতিধ্বনি হয় এবং আপনিও একটি শান্তিময়, ধর্ম-নিষ্ঠ জীবনের সঙ্গী খুঁজছেন, তাহলে আমি আপনার এবং আপনার পরিবারের সাথে যোগাযোগ করতে গর্বিত হব। আল্লাহ আমাদের সবাইকে সেই পথে পরিচালিত করুন যা পবিত্র, সত্যিকারের এবং আমাদের মঙ্গলজনক।",
                 footer2: "উষ্ণ অভিনন্দন সহকারে, আবদুল্লাহ আল মাইন",
+                footer3: "মোবাইল এবং হোয়াটসঅ্যাপ: 01517830517",
+                footer4: "অভিভাবক (পিতা) মোবাইল এবং হোয়াটসঅ্যাপ: 01739694602",
+                footer5: "আমাদের বর্তমান ঠিকানা ম্যাপে দেখুন",
                 quran: "\"এবং তাঁর নিদর্শনসমূহের মধ্যে একটি এই যে, তিনি তোমাদের মধ্য থেকে তোমাদের জন্য সঙ্গিনী সৃষ্টি করেছেন, যাতে তোমরা তাদের কাছে শান্তি পাও, এবং তিনি তোমাদের মধ্যে ভালোবাসা এবং সহানুভূতি স্থাপন করেছেন।\"",
                 quranRef: "(কুরআন ৩০:২১)"
             }
@@ -298,8 +307,11 @@ Govt. Hazi Ibrahim Alamchan Model School & College, Bandar, Narayanganj and HSC 
             const footerPs = document.querySelectorAll('footer p');
             footerPs[0].textContent = translations[lang].footer1;
             footerPs[1].textContent = translations[lang].footer2;
-            footerPs[2].textContent = translations[lang].quran;
-            footerPs[3].textContent = translations[lang].quranRef;
+            footerPs[2].textContent = translations[lang].footer3;
+            footerPs[3].textContent = translations[lang].footer4;
+            footerPs[4].innerHTML = `<a href="https://maps.app.goo.gl/Jjtv76hqVVLgcuzF7" target="_blank">${translations[lang].footer5}</a>`;
+            footerPs[5].textContent = translations[lang].quran;
+            footerPs[6].textContent = translations[lang].quranRef;
 
             // Button text
             document.getElementById('lang-en').classList.toggle('active', lang === 'en');
